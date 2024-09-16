@@ -17,14 +17,16 @@ public class LinkBankTest {
     private static final Logger log = LoggerFactory.getLogger(LinkBankTest.class);
 
     public static void linkBanksucces(Map<String, Object> header, JSONObject body){
-        RestAssured.baseURI="https://adapter-agribank-test.epayservices.com.vn";
+        RestAssured.baseURI=GlobalContrains.BASE_URI_CORECTT;
         RequestSpecification httpReq = given().log().all();
+
         httpReq.contentType(JSON)
                 .accept("*/*")
                 .headers(header)
                 .body(body.toString());
 
-        Response response = httpReq.when().post("/api/v1/link_bank");
+
+        Response response = httpReq.when().post(Endpoint.EP_LINKBANK_CORECTT);;
         int statusCode = response.getStatusCode();
         System.out.printf("status: %d%n", statusCode);
 

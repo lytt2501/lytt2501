@@ -61,7 +61,7 @@ public class AppTest
                 .put("channel", "App")
                 .put("lang", "vi")
                 .put("transactionCode", genTranCodeLink())
-                .put("userWallet", "0963492186")
+                .put("userWallet", "0968352587")
                 .put("transTime",generateTransactionTime());
 
 
@@ -73,7 +73,7 @@ public class AppTest
                 .put("cardIssueDate", "")
                 .put("cardHolder", "TRAN THI LY")
                 .put("iCNumber", "040193028408")
-                .put("phoneNumber", "0963492186")
+                .put("phoneNumber", "0968352587")
                 .put("walletType", 1);
 
 

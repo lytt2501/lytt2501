@@ -12,7 +12,7 @@ public class MainTest {
     public static void main(String[] args) {
         Map<String, Object> header = AppTest.setHeader();
         JSONObject body = AppTest.requestBodyJson();
-//        AppTest.linkBank(header, body);
+       // AppTest.linkBank(header, body);
         LinkBankTest.linkBanksucces(header, body);
        // LinkBankTest.linkBankFailed(header, body);
     }
